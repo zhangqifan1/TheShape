@@ -4,10 +4,11 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
-import android.support.annotation.ColorRes;
-import android.support.annotation.IntDef;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.IntDef;
 
 import com.luliang.shapeutils.DevShapeUtils;
 import com.luliang.shapeutils.interfaces.IDevUtils;

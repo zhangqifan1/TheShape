@@ -1,11 +1,11 @@
 package com.luliang.shapeutils.databinding;
 
-import android.databinding.BindingAdapter;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.databinding.BindingAdapter;
 
 import com.luliang.shapeutils.DevShapeUtils;
 import com.luliang.shapeutils.R;
@@ -292,8 +292,9 @@ public class DevBind {
             if (gradientSweepColors.contains("|")) {
                 String[] colors = gradientSweepColors.split("\\|");
                 for (String color : colors) {
-                    if (!color.contains("#"))
+                    if (!color.contains("#")) {
                         throw new ExceptionInInitializerError("错误的颜色格式,仅支持 #FFFFFFF 类格式颜色设置");
+                    }
                 }
                 devShape.gradientSweep(colors);
             } else {
@@ -306,8 +307,9 @@ public class DevBind {
             if (gradientRadialColors.contains("|")) {
                 String[] colors = gradientRadialColors.split("\\|");
                 for (String color : colors) {
-                    if (!color.contains("#"))
+                    if (!color.contains("#")) {
                         throw new ExceptionInInitializerError("错误的颜色格式,仅支持 #FFFFFFF 类格式颜色设置");
+                    }
                 }
                 devShape.gradientRadial(gradientRadialRadius, colors);
             } else {

@@ -3,10 +3,11 @@ package com.luliang.shapeutils.shape;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.support.annotation.ColorRes;
-import android.support.annotation.IntDef;
-import android.support.annotation.StringDef;
 import android.view.View;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.IntDef;
+import androidx.annotation.StringDef;
 
 import com.luliang.shapeutils.DevShapeUtils;
 import com.luliang.shapeutils.interfaces.IDevUtils;

@@ -6,7 +6,8 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorRes;
+
+import androidx.annotation.ColorRes;
 
 import com.luliang.shapeutils.selector.DevSelector;
 import com.luliang.shapeutils.shape.DevShape;
@@ -86,7 +87,7 @@ public class DevShapeUtils {
      * @param normalColorResId  正常颜色 例：R.color.colorPrimary
      * @return DevSelector
      */
-    public static DevSelector selector(@DevSelector.SelectorState int selectorState,@ColorRes int pressedColorResId, @ColorRes int normalColorResId) {
+    public static DevSelector selector(@DevSelector.SelectorState int selectorState, @ColorRes int pressedColorResId, @ColorRes int normalColorResId) {
         return DevSelector.getInstance().selector(selectorState,new ColorDrawable(DevShapeUtils.getContext().getResources().getColor(pressedColorResId)), new ColorDrawable(DevShapeUtils.getContext().getResources().getColor(normalColorResId)));
     }
 
