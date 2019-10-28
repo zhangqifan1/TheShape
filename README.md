@@ -4,4 +4,4 @@ https://github.com/LiangLuDev/DevShapeUtils 大佬的 ,我导不进去,发出来
 
 maven { url "https://jitpack.io" }
 
-implementation 'com.github.zhangqifan1:Shape:1.0.0'
+ implementation 'com.github.zhangqifan1:TheShape:1.1.1'
